@@ -29,6 +29,7 @@ public class ResourceUpdateMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -36,6 +37,9 @@ public class ResourceUpdateMod
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         LOGGER.info("Resource Update Is Ready To Roll");
+        event.enqueueWork(()->{
+            //ComposterBlock.COMPOSTABLES.put(ModItems.ITEMS.get(), 0.3F)
+        });
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
