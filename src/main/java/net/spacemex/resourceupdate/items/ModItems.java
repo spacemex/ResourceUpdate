@@ -14,6 +14,12 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ResourceUpdateMod.MODID);
 
+    public static final RegistryObject<Item> RAW_DIAMOND = ITEMS.register("raw_diamond",
+            ()-> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCE_UPDATE_TAB)));
+
+    public static final RegistryObject<Item> RAW_EMERALD = ITEMS.register("raw_emerald",
+            ()-> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCE_UPDATE_TAB)));
+
 
     //Tools
     public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe",

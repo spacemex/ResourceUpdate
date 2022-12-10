@@ -1,5 +1,8 @@
 {
   "item.resourceupdate.copper_axe": "Copper Axe",
 
+  "item.resourceupdate.raw_diamond": "Raw Diamond",
+  "item.resourceupdate.raw_emerald": "Raw Emerald",
+
   "itemGroup.resource_update_tab": "Resource Update"
 }
